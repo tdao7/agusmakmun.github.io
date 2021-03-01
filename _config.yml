@@ -34,7 +34,7 @@ urls:
 #      url: /feed.xml
 
 url: "tdao7.github.io"
-baseurl: "blogcodedao"
+baseurl: ""
 paginate: 20
 per_page: 20
 paginate_path: "/page/:num/"
