@@ -33,8 +33,8 @@ urls:
 #    - text: XML Feed
 #      url: /feed.xml
 
-url: "https://tdao7.github.io"
-baseurl: ""
+url: "tdao7.github.io"
+baseurl: "blogcodedao"
 paginate: 20
 per_page: 20
 paginate_path: "/page/:num/"
