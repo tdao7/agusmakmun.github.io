@@ -1,9 +1,9 @@
-title: Zyrolog
-description: Zyrolog - Blog chém gió những câu chuyện xung quanh công việc lập trình của cá nhân mình - Chia sẻ góc nhìn của bản thân về cuộc sống, công việc lập trình cho cộng đồng
+title: vCoderLog
+description: vCoderLog - Blog chém gió những câu chuyện xung quanh công việc lập trình của cá nhân mình - Chia sẻ góc nhìn của bản thân về cuộc sống, công việc lập trình cho cộng đồng
 author: Đào Xuân Trường
 github: https://github.com/tdao7
-about: Tôi là Trường - coder mới vào nghề cách đây không lâu. Với tôi chia sẻ kiến thức là cách học tập hiệu quả nhất. Zyrolog là blog chia sẻ những kiến thức lập trình, chuyện linh tinh xoay quanh công việc code dạo... Chia sẻ góc nhìn của bản thân về cuộc sống, công việc lập trình cho cộng đồng...
-google_analytics: UA-XXXXXXXX-Y
+about: Tôi là Trường - coder mới vào nghề cách đây không lâu. Với tôi chia sẻ kiến thức là cách học tập hiệu quả nhất. vCoderLog là blog chia sẻ những kiến thức lập trình, chuyện linh tinh xoay quanh công việc code dạo... Chia sẻ góc nhìn của bản thân về cuộc sống, công việc lập trình cho cộng đồng...
+google_analytics: UA-155394483-1
 
 enableTags: true
 tagarray: []
@@ -15,15 +15,11 @@ collections:
 
 social:
     - icon: fa-facebook
-      link: "https://www.facebook.com/nhatkycoder"
+      link: "https://www.facebook.com/vcoderlog"
     - icon: fa-linkedin
       link: "https://www.linkedin.com/in/tdao7/"
     - icon: fa-github
       link: "https://github.com/tdao7"
-
-share:
-  twitter_username: github.io
-  fb_appid: 1749788565247320
 
 urls:
     - text: About Me
