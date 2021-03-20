@@ -1,0 +1,22 @@
+[29/Apr/2020:16:01:47] (ℹ️): WordPress Instance Info:
+[29/Apr/2020:16:01:47] (ℹ️): Home URL : https://codedaoblog.com
+[29/Apr/2020:16:01:47] (ℹ️): Site URL : https://codedaoblog.com
+[29/Apr/2020:16:01:47] (ℹ️): WordPress Version : 5.4
+[29/Apr/2020:16:01:47] (ℹ️): Onboarding Version : 1.3.5
+[29/Apr/2020:16:01:47] (ℹ️): Multisite : No
+[29/Apr/2020:16:01:47] (ℹ️): Server Info : Apache
+[29/Apr/2020:16:01:47] (ℹ️): PHP Version : 7.3.17
+[29/Apr/2020:16:01:47] (ℹ️): HTTPS : Yes
+[29/Apr/2020:16:01:47] (ℹ️): PHP Max Execution Time : 30
+[29/Apr/2020:16:01:47] (ℹ️): PHP Max Input Vars : 1000
+[29/Apr/2020:16:01:47] (ℹ️): Max Upload Size : 8388608
+[29/Apr/2020:16:01:47] (ℹ️): Plugins:
+[29/Apr/2020:16:01:47] (ℹ️): [PLUGIN] Elementor Pro : v2.8.2 (Elementor.com)
+[29/Apr/2020:16:01:47] (ℹ️): [PLUGIN] Elementor : v2.8.5 (Elementor.com)
+[29/Apr/2020:16:01:47] (ℹ️): [PLUGIN] Jetpack by WordPress.com : v8.1.1 (Automattic)
+[29/Apr/2020:16:01:47] (ℹ️): [PLUGIN] Image optimization service by Optimole : v2.2.8 (Optimole)
+[29/Apr/2020:16:01:47] (ℹ️): [PLUGIN] Gutenberg Blocks and Template Library by Otter : v1.3.3 (ThemeIsle)
+[29/Apr/2020:16:01:47] (ℹ️): [PLUGIN] Really Simple SSL : v3.3 (Rogier Lankhorst, Mark Wolters)
+[29/Apr/2020:16:01:47] (ℹ️): [PLUGIN] Orbit Fox Companion : v2.9.1 (Themeisle)
+[29/Apr/2020:16:01:47] (ℹ️): [PLUGIN] Yoast SEO Premium : v12.6.1 (Team Yoast)
+[29/Apr/2020:16:01:47] (ℹ️): [PLUGIN] WPForms Lite : v1.5.8.2 (WPForms)
