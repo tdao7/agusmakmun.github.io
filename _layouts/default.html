@@ -88,7 +88,8 @@ layout: compress
     <!-- syntax highlighting CSS -->
     <link rel="stylesheet" href="/static/css/syntax.css">
     <!-- Bootstrap core CSS -->
-    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--    <link href="/static/css/bootstrap.min.css" rel="stylesheet">-->
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
     <!-- Custom CSS -->
@@ -113,46 +114,67 @@ layout: compress
   </head>
   <body>
     <div class="container">
-      <div class="col-sm-3">
-        <div class="fixed-condition">
-          <img src="/static/img/avatar_01.jpg" alt="Avatar" class="avatar">
-          <h1 class="author-name"><a href="/">{{ site.author }}</a></h1>
-          {% if site.about %}
-            <div class="profile-about">
-              {{ site.about }}
-            </div>
-          {% endif %}
-          <div class="social">
-            <ul>
-              {% for link in site.social %}
-                <li><a href="{{ link.link }}" target="_blank"><i class="fa {{ link.icon }}"></i></a></li>
+      <div class="sm-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <h1><a class="navbar-brand" href="/">{{ site.title }}</a></h1>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+              {% for i in site.urls %}
+              <li class="nav-item"><a class="nav-link" href="{{ i.url }}">{{ i.text }}</a></li>
               {% endfor %}
             </ul>
           </div>
-          <div class="search" id="js-search">
-            <input type="text" placeholder="Search" class="search__input form-control" id="js-search__input">
-            <ul class="search__results" id="js-search__results"></ul>
-          </div>
-          <hr />
-          <ul class="sidebar-nav">
-            <strong>Navigation</strong>
-            <li><a href="/">Home</a></li>
-            {% for i in site.urls %}
-              <li><a class="about" href="{{ i.url }}">{{ i.text }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-        <!-- end /.fixed-condition -->
+        </nav>
       </div>
-      <div class="col-sm-8 col-offset-1 main-layout">
-        {{ content }}
-        <footer>
-          &copy; {{ site.author }}
-          {% if site.github %}
-            - <a href="{{ site.github }}">{{ site.github }}</a>
-          {% endif %}
 
-        </footer>
+      <div class="row" style="margin: 1rem 0">
+        <div class="col-sm-3">
+          <div class="fixed-condition">
+            <img src="/static/img/avatar_01.jpg" alt="Avatar" class="avatar">
+            <h1 class="author-name"><a href="/">{{ site.author }}</a></h1>
+            {% if site.about %}
+            <div class="profile-about">
+              {{ site.about }}
+            </div>
+            {% endif %}
+            <div class="social">
+              <ul>
+                {% for link in site.social %}
+                <li><a href="{{ link.link }}" target="_blank"><i class="fa {{ link.icon }}"></i></a></li>
+                {% endfor %}
+              </ul>
+            </div>
+            <div class="search" id="js-search">
+              <input type="text" placeholder="Search" class="search__input form-control" id="js-search__input">
+              <ul class="search__results" id="js-search__results"></ul>
+            </div>
+            <hr/>
+            <ul class="sidebar-nav">
+              <strong>Navigation</strong>
+              <li><a href="/">Home</a></li>
+              {% for i in site.urls %}
+              <li><a class="about" href="{{ i.url }}">{{ i.text }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+          <!-- end /.fixed-condition -->
+        </div>
+        <div class="col-sm-8 col-offset-1 main-layout">
+          {{ content }}
+          <footer>
+            &copy; {{ site.author }}
+            {% if site.github %}
+            - <a href="{{ site.github }}">{{ site.github }}</a>
+            {% endif %}
+
+          </footer>
+        </div>
       </div>
       <!-- end /.col-sm-8 -->
     </div>
@@ -160,9 +182,9 @@ layout: compress
 
     <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="/static/js/super-search.js"></script>
     <script src="/static/js/thickbox-compressed.js"></script>
     <script src="/static/js/projects.js"></script>

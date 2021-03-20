@@ -141,6 +141,10 @@ div.col-sm-3 div.profile-about {
   color: #6D6D6D;
 }
 
+.author-name {
+  padding: 1rem 0 0;
+}
+
 .share-page {
   padding: 10px 10px 5px;
   border-top: 1px solid #f0f0f0;
@@ -157,9 +161,17 @@ div.col-sm-3 div.profile-about {
     position: fixed;
     max-width: 255px;
   }
+  .sm-header {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   div.col-sm-3 {
     margin-top: 30px;
+    display: none;
+  }
+
+  .hide-mobile-content {
+    display: none;
   }
 }
